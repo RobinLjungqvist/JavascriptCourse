@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Labb 7</title>
+	<meta charset="utf-8" />
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/angular-route.min.js"></script>
+    <script src="basics.js"></script>
+</head>
+<body ng-app="currencyConverter">
+    <table ng-controller="converter">
+        <tr>
+            <th>Currency</th>
+            <th>Input</th>
+            <th>Result</th>
+        </tr>
+        <tr>
+            <td>
+                <label for="euro">Euro</label>
+            </td>
+            <td>
+                <input type="number" ng-model="euro" name="euro" min="0" />
+            </td>
+            <td><button type="button" ng-click="ConvertToSek()">To Sek</button></td>
+            <td>
+            <div name="euroResult" ng-model="euroResult">{{euroResult}} SEK</div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="sek">SEK</label>
+            </td>
+            <td>
+                <input type="number"  ng-model="sek" name="sek" min="0" />
+            </td>
+            <td>
+
+                <button type="button" ng-click="ConvertToEuro()">To Euro</button>
+            </td>
+            <td>
+                <div name="sekResult" ng-model="sekResult" >{{sekResult}} EUR</div>
+            </td>
+        </tr>   
+    </table>
+</body>
+</html>
