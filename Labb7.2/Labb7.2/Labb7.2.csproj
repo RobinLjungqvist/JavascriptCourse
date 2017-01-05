@@ -69,9 +69,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
-    <Content Include="ApplicationInsights.config">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <Content Include="Scripts\version.json" />
     <Content Include="Scripts\errors.json" />
     <Content Include="Scripts\angular.min.js.map" />
@@ -98,6 +95,14 @@
   <ItemGroup>
     <Content Include="index.html" />
     <Content Include="myScripts\app.js" />
+    <Content Include="myScripts\Entities\Book.js" />
+    <Content Include="myScripts\Entities\DVD.js" />
+    <Content Include="myScripts\Entities\Game.js" />
+    <Content Include="myScripts\Entities\Product.js" />
+    <Content Include="Pages\AddBook.html" />
+    <Content Include="Pages\AllProducts.html" />
+    <Content Include="Pages\Books.html" />
+    <Content Include="Pages\Home.html" />
     <Content Include="Scripts\angular-animate.js" />
     <Content Include="Scripts\angular-animate.min.js" />
     <Content Include="Scripts\angular-aria.js" />
@@ -874,6 +879,7 @@
     <Content Include="Scripts\jquery-3.1.1.min.js" />
     <Content Include="Scripts\jquery-3.1.1.slim.js" />
     <Content Include="Scripts\jquery-3.1.1.slim.min.js" />
+    <Content Include="style.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -882,6 +888,10 @@
   <ItemGroup />
   <ItemGroup>
     <TypeScriptCompile Include="myScripts\app.ts" />
+    <TypeScriptCompile Include="myScripts\Entities\Book.ts" />
+    <TypeScriptCompile Include="myScripts\Entities\DVD.ts" />
+    <TypeScriptCompile Include="myScripts\Entities\Game.ts" />
+    <TypeScriptCompile Include="myScripts\Entities\Product.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-animate.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-component-router.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-cookies.d.ts" />

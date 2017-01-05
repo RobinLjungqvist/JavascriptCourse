@@ -1,0 +1,62 @@
+﻿<div class="Container">
+    <h2>All Books</h2>
+    <button type="button" ng-click="addBookDivclicked = !addBookDivclicked">Add Book</button>
+    <hr />
+    <div id="addBookDiv" ng-show="addBookDivclicked">
+        <form name="newBookForm" ng-submit="bookSubmit(newBookForm)">
+            <table>
+                <tr>
+                    <td>Title:</td>
+                    <td><input type="text" required ng-model="bookName"/></td>
+                </tr>
+                <tr>
+                    <td>Category:</td>
+                    <td><input type="text" required ng-model="bookCategory" /></td>
+                </tr>
+                <tr>
+                    <td>Price:</td>
+                    <td><input type="number" required min="0" ng-model="bookPrice" /></td>
+                </tr>
+                <tr>
+                    <td>Article Number:</td>
+                    <td><input type="number" required min="10000" max="99999" ng-model="bookArtNr" /></td>
+                </tr>
+                <tr>
+                    <td>Author:</td>
+                    <td><input type="text" required ng-model="bookAuthor" /></td>
+                </tr>
+                <tr>
+                    <td>Release Year:</td>
+                    <td><input type="number" required min="1800" max="9999" ng-model="bookYear" /></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button type="submit">Submit</button></td>
+                </tr>
+            </table>
+        </form>
+        <div class="success" ng-show="success">
+            <p>Succesfully added the book!</p>
+        </div>
+        <hr />
+    </div>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Price</th>
+            <th>Article Number</th>
+            <th>Author</th>
+            <th>Release Year</th>
+        </tr>
+        <tr ng-repeat="book in Books | orderBy: '+ReleaseYear'">
+            <td>{{book.Name}}</td>
+            <td>{{book.Category}}</td>
+            <td>{{book.Price}}</td>
+            <td>{{book.ArticleNumber}}</td>
+            <td>{{book.Author}}</td>
+            <td>{{book.ReleaseYear}}</td>
+        </tr>
+    </table>
+
+</div>

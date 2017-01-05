@@ -1,0 +1,20 @@
+﻿<div class="Container">
+    <div>
+        <h2>Display all products.</h2>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Category</th>
+                <th>Price</th>
+                <th>Article Number</th>
+            </tr>
+            <tr ng-repeat="prod in Products | orderBy: '+Category'">
+                <td>{{prod.Name}}</td>
+                <td>{{prod.Category}}</td>
+                <td>{{prod.Price}}</td>
+                <td>{{prod.ArticleNumber}}</td>
+            </tr>
+        </table>
+    </div>
+
+</div>
