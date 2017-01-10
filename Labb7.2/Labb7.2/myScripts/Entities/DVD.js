@@ -16,3 +16,4 @@ var Entities;
     }(Entities.Product));
     Entities.DVD = DVD;
 })(Entities || (Entities = {}));
+//# sourceMappingURL=DVD.js.map

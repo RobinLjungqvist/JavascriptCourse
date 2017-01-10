@@ -1,0 +1,17 @@
+﻿<div class="Container">
+    <label for="search">Search:</label>
+<input type="text" ng-model="personFilter"/>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Education</th>
+            <th>Year</th>
+        </tr>
+        <tr ng-repeat="person in Persons | filter: personFilter">
+            <td>{{person.Name}}</td>
+            <td>{{person.Education}}</td>
+            <td>{{person.StartYear}}</td>
+
+        </tr>
+    </table>
+</div>

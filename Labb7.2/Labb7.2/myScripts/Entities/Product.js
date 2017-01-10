@@ -11,3 +11,4 @@ var Entities;
     }());
     Entities.Product = Product;
 })(Entities || (Entities = {}));
+//# sourceMappingURL=product.js.map

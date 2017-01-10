@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>First</title>
+	<meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="scripts/first.js"></script>
+</head>
+<body>
+    <h2>First and Second</h2>
+    <button id="ShowPersonBtn" type="button" >Show Persons</button>
+    <button id="ShowSearchBtn" type="button">Search Persons</button>
+    <button id="AddPersonBtn" type="button">Add Person</button>
+    <hr/>
+    <div id="searchDiv">
+        <input id="search" type="text" />
+        <button id="searchBtn">Search</button>
+        <div id="resultInfo">
+
+        </div>
+        <div id="searchResult">
+        
+        </div>
+    </div>
+    
+    <div id="persons"></div>
+    <div id="addPersonsDiv">
+        <form name="personForm" id="personForm">
+            <table>
+                <tr>
+                    <td>
+                        <label for="fName">First Name:</label>
+                    </td>
+                    <td>
+                        <input id="fName" type="text" name="fName" required />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="lName">Last Name:</label>
+
+                    </td>
+                    <td>
+                        <input id="lName" type="text" name="lName" required />
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="age">Age:</label>
+
+                    </td>
+                    <td>
+                        <input id="age" type="text" name="age" required />
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="city">City:</label>
+
+                    </td>
+                    <td>
+                        <input id="city" type="text" name="city" required />
+
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button id="submitBtn" type="button">Add Person</button></td>
+                    <td id="addPersonResult"></td>
+
+                </tr>
+</table>
+        </form>
+    </div>
+    <hr />
+
+</body>
+</html>

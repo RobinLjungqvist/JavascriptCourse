@@ -33,3 +33,4 @@ function ConvertToSek(input) {
     var result = input * rate;
     return result;
 }
+//# sourceMappingURL=basics.js.map

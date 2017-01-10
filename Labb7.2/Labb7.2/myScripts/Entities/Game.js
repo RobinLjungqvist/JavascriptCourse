@@ -16,3 +16,4 @@ var Entities;
     }(Entities.Product));
     Entities.Game = Game;
 })(Entities || (Entities = {}));
+//# sourceMappingURL=Game.js.map

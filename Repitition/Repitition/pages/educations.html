@@ -1,0 +1,13 @@
+﻿<div class="Container">
+    <label for="search">Search:</label>
+    <input type="text" ng-model="eduFilter" />
+    <table>
+        <tr>
+            <th>Educations</th>
+        </tr>
+        <tr ng-repeat="edu in educations | filter: eduFilter">
+            <td>{{edu}}</td>
+
+        </tr>
+    </table>
+</div>

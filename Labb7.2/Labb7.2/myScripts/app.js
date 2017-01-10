@@ -89,3 +89,4 @@ app.controller('navbarCtrl', ['$scope', '$location', function ($scope, $location
 app.controller('productsCtrl', ['$scope', 'productService', function ($scope, productService) {
         $scope.Products = productService.GetAllProducts();
     }]);
+//# sourceMappingURL=app.js.map
