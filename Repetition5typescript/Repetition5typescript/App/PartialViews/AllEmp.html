@@ -1,0 +1,16 @@
+﻿<div class="Container">
+    <h2>All employees</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Department</th>
+
+        </tr>
+        <tr ng-repeat="emp in Employees">
+            <td>{{emp.FirstName}} {{emp.LastName}}</td>
+            <td>{{emp.Department}}</td>
+
+        </tr>
+    </table>
+</div>
+

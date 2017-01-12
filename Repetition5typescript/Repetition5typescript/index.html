@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <title>Repitition</title>
+	<meta charset="utf-8" />
+    <script src="Scripts/jquery-3.1.1.min.js"></script>
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/angular-route.min.js"></script>
+    <script src="App/Entities/Employee.js"></script>
+    <script src="App/Entities/AdminEmployee.js"></script>
+    <script src="App/Entities/TechEmployee.js"></script>
+    <script src="App/app.js"></script>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+    <h1>Employees</h1>
+    <div id="navBar" ng-controller="navbarCtrl">
+        <button type="button" ng-click="Home()">Home</button>
+        <button type="button" ng-click="AllEmp()">All Employees</button>
+        <button type="button" ng-click="AdminEmp()">Adminisration</button>
+        <button type="button" ng-click="TechEmp()">Technicans</button>
+
+    </div>
+    <div ng-view>
+
+    </div>
+</body>
+</html>
